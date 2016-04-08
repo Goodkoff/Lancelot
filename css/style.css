@@ -10,25 +10,11 @@ body {
 .clearfix {
     overflow: auto;
 }
-.header-wrapper {
-    display: block;
-    width: 100%;
-   background-color: #FFFFFF;
-    position: fixed;
-}
+
 .container {
     display: block;
     width: 1024px;
     margin: 0 auto;
-<<<<<<< HEAD
-=======
-    background-color: #FFFFFF;
-    z-index: 2030;
-
-    left: 0;
-    right: 0;
-    padding: 10px;
->>>>>>> ac818054c709ef9d047201942532adad42cbfcfa
 }
 
 .header-wrapper {
@@ -48,8 +34,11 @@ body {
 .header-logo {
     display: block;
     float: left;
-    padding: 2px 0;
+    }
 
+.header-logo > img {
+    width: 150px;
+    padding: 8px 0;
 }
 
 ul.header-nav {
@@ -229,13 +218,165 @@ ul.header-nav > li > a:hover {
     margin: 10px 0 8px;
 }
 
-/*.content{
+.section {
+    width: 100%;
+    background-attachment: #fff;
+    padding: 50px;
+    }
+
+.section.section-dark {
+    background-color: #F8FBFD;
+}
+
+.section .section-title {
+    text-align: center ;
+    font-size: 48px;
+    line-height: 29px;
+    text-transform: uppercase;
+    color: #374048;
+}
+
+.section .section-discription {
+    text-align: center;
+    position: relative;
+    font-size: 20px;
+    color: #969da3;
+    line-height: 32px;
+    width: 700px;
+    margin: 0 auto 60px auto;
+    padding-bottom: 60px;
+}
+
+
+
+.section .section-discription::after {
+    content: "";
+    position: absolute;
+    bottom: calc(30px - 2px);
+    width: 40px;
+    height: 8px;
+    background-color: #eee;
+    left: calc(50% - 80px/2);
+
+}
+
+.product-section {}
+.product-section .product-section-watch{
+    background: url("../img/apple-watch-2.png");
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 347px;
+    height: 499px;
+    margin: 0 auto;
+    font-size: 15px;
+}
+
+.product-section .product-section-watch > .watch-tip{
+    position: absolute;
+    text-align: center;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    background-color: #2fca2d;
+    border-radius: 50%;
+    color: #fff;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.product-section .product-section-watch > .watch-tip:hover::before {
+    content: "";
+    position: absolute;
+    top: -7px;
+    left: -7px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 3px solid #2fca2d;
+    background-color: transparent;
+}
+.product-section .product-section-watch > .watch-tip:nth-child(1){
+    top:40px;
+    right: 18px;
+    left: initial;
+}
+.product-section .product-section-watch > .watch-tip:nth-child(2){
+    top: 140px;
+    left: -10px;
+}
+.product-section .product-section-watch > .watch-tip:nth-child(3){
+    top: 250px;
+    left: 225px;
+}
+.product-section .product-section-watch > .watch-tip:nth-child(4){
+    top: initial;
+    bottom: 95px;
+    left: 5px;
+}
+
+.hiw-steps {
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+}
+
+
+.hiw-steps > .hiw-step {
+    position: relative;
+    float: left;
+    width: 33.3333333%;
+    padding: 0 20px;
+}
+
+.hiw-steps > .hiw-step > .hiw-step-image {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.hiw-steps > .hiw-step > .hiw-step-title {
+    color: #374048;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.hiw-steps > .hiw-step > .hiw-step-discription {
+     color: #374048;
+     font-size: 16px;
+    line-height: 26px;
+ }
+
+.hiw-steps > .hiw-step > .hiw-step-arrow {
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: -5px;
+    width: 20px;
+    height: 20px;
+    border-top: 2px solid #374048;
+    border-right: 2px solid #374048;
+    transform: rotate(45deg);
+}
+
+
+/*.hiw-steps > .hiw-step:not(:last-child)::after{
+ content: ">";
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+.content{
     background: url("../img/header-background.jpg") center no-repeat ;
     position: relative;
     height: 1200px;
     text-align: center;
     padding-top: 60px;
-
 }
 .content > h1{
     color: #374048;
@@ -268,29 +409,19 @@ ul.header-nav > li > a:hover {
     height: 328px;
     margin: 60px auto 0 auto;
 }
-
 .button2{
     background-color: #FF6622;
     border-radius: 50px;
     display: inline-block;
 }
-
 .button2 > a.button2 {
     border-radius: 50px;
     padding: 10px 30px;
     background-color: #FF6622;
     color: #FFFFFF;
 }
-
-<<<<<<< HEAD
 .button2 > a.button2:hover {
      background-color: #374048;
      transition: all 1s;
     color: #FFFFFF;
  }*/
-=======
-.button2 > a.button2:hover{
-    background-color: #374048;
-    color: #FFFFFF;
-    transition: all 1s;}
->>>>>>> ac818054c709ef9d047201942532adad42cbfcfa
