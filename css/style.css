@@ -705,6 +705,7 @@ ul.header-nav > li > a:hover {
 .four-sections {
     width: 1263px;
     display: block;
+    margin: 0 auto;
 
 }
 
@@ -774,6 +775,110 @@ ul.header-nav > li > a:hover {
     color: #c0cad0;
     font-size: 18px;
 }
+
+.section-reviews {}
+.section-reviews .list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.section-reviews .item {
+    display: block;
+    position: relative;
+    width: 33.33333%;
+    float: left;
+    text-align: center;
+}
+.section-reviews .description {
+color: #353535; }
+.section-reviews .logo {
+    opacity: 0.5;
+}
+
+.section-reviews h3 {
+    text-transform: uppercase;
+    font-size: 22px;
+    color: #374048;
+}
+.section-reviews .row {
+    text-align: center;
+}
+
+.section-reviews .logo-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    line-height: 1.42857143;
+
+}
+.section-reviews .logo-item {
+    opacity: 0.5;
+    display: block;
+    position: relative;
+    width: 16.666%;
+    float: left;
+    line-height: 47px;
+    padding: 0 10px;
+}
+
+.section-faq a {
+    color: #0084ff;
+    text-decoration: none;
+}
+
+.section-faq .list { list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.section-faq .item {
+    display: block;
+    position: relative;
+    width: 50%;
+    float: left;
+    padding: 10px;
+}
+
+.section-faq p {
+    color: #82898f;
+    font-size: 15px;
+}
+
+.section-faq h3 {
+    color: #374048;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.section-tech-specs {}
+
+.section-tech-specs .list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.section-tech-specs .item  {
+    display: block;
+    position: relative;
+    width: 33.3333%;
+    float: left;
+
+}
+
+.section-tech-specs p {
+    color: #82898f;
+    font-size: 15px;
+    margin: 0;
+}
+
+.section-tech-specs h3 {
+    color: #374048;
+    font-size: 20px;
+    font-weight: 600;
+}
+
 
 .benefits-list {
 }
