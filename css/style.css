@@ -706,6 +706,7 @@ ul.header-nav > li > a:hover {
     width: 1263px;
     display: block;
     margin: 0 auto;
+    overflow: hidden;
 
 }
 
@@ -808,17 +809,18 @@ color: #353535; }
     list-style: none;
     margin: 0;
     padding: 0;
-    line-height: 1.42857143;
+    line-height: 1;
+
 
 }
 .section-reviews .logo-item {
     opacity: 0.5;
-    display: block;
-    position: relative;
+    display: inline-block;
     width: 16.666%;
     float: left;
-    line-height: 47px;
-    padding: 0 10px;
+    padding: 0 15px;
+    vertical-align: top;
+
 }
 
 .section-faq a {
@@ -864,6 +866,9 @@ color: #353535; }
     position: relative;
     width: 33.3333%;
     float: left;
+    min-height: 250px;
+    border-top: 1px solid;
+    border-top-color: #f4f5f6;
 
 }
 
@@ -879,23 +884,308 @@ color: #353535; }
     font-weight: 600;
 }
 
+.section-team {
 
-.benefits-list {
+}
+.section-team .list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+.section-team .item {
+    display: block;
+    position: relative;
+    width: 25%;
+    float: left;
+    text-align: center;
+    line-height: 5px;
+
 }
 
-.benefits-list > .benefits-item {
+.section-team img {
+    max-width: 220px;
 }
 
-.benefits-list > .benefits-item .benefits-item-content {
+.section-team h3 {
+    color: #374048;
+    font-size: 20px;
+    font-weight: 600;
 }
 
-.benefits-list > .benefits-item .benefits-item-icon {
+.section-team p {
+    color: #82898f;
+    font-size: 14px;
 }
 
-.benefits-list > .benefits-item .benefits-item-title {
+.section-timeline .title {
+    text-align: center;
+    padding: 10px 30px;
+    width: 96px;
+    background-color: #dee0e2;;
+    border-radius: 4px;
+    text-transform: uppercase;
+    display: inline-block;
+    left: calc(50% - 48px);
+    }
+
+.section-timeline .row{
+    display: block;
+    width: 100%;
+    padding: 50px;
+    z-index: 1;
+
+}
+.section-timeline .row:nth-child(1) {
+    padding-top: 0;
+    text-align: center;
+    position: relative;
 }
 
-.benefits-list > .benefits-item .benefits-item-discription {
+.section-timeline .row:nth-child(9) {
+    padding-bottom: 0;
+    text-align: center;
+    position: relative;
+}
+
+.section-timeline .row:nth-child(6) {
+    text-align: center;
+    position: relative;
+}
+
+
+.section-timeline .timeline {
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.section-timeline .timeline::before {
+    content: "";
+    background: #dee0e2;
+    width: 8px;
+    height: 100%;
+    display: block;
+    position: absolute;
+    left: calc(50% - 4px);
+    z-index: 0;
+}
+
+.section-timeline .right::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    display: block;
+    border: 6px solid;
+    border-radius: 100%;
+    position: absolute;
+    top: -7px;
+    left: -13px;
+    border-color: #dee0e2;
+    background: #fff;
+}
+
+
+.section-timeline .row > .left{
+    width: 50%;
+    text-align: right;
+    text-transform: uppercase;
+    padding-right: 35px;
+    float: left;
+}
+.section-timeline .row > .right{
+    width: 50%;
+    float: left;
+    text-transform: uppercase;
+    padding-left: 40px;
+    position: relative;
+
+}
+
+.section-timeline .text {
+    color: #6a737b;
+    font-weight: bold;
+}
+
+.section-timeline .date {
+    font-size: 15px;
+    font-weight: bold;
+    color: #dadce0;
+}
+
+.section-timeline .text p {
+    color: #b7bbbf;
+    font-weight: 300;
+    width: 240px;
+    text-transform: none;
+    font-size: 14px;
+}
+
+.section-mobile-app {
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-color: black;
+
+}
+
+.section-mobile-app::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(../img/mobile-ap-bg.jpg) no-repeat;
+    background-size: cover;
+    opacity: 0.3;
+}
+
+.section-mobile-app .column {
+    padding-top: 90px;
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 0;
+    margin-bottom: -10px;
+}
+.section-mobile-app .image-section {
+    width: 50%;
+    float: left;
+    display: block;
+}
+.section-mobile-app .text-section {
+    width: 50%;
+    float: left;
+    display: block;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: justify;
+
+}
+
+.section-mobile-app .text-section h2 {
+    color: #fff;
+    font-size: 50px;
+    margin-top: 88px;
+    margin-bottom: 20px;
+}
+.section-mobile-app .text-section p {
+    color: #feffff;
+    font-size: 18px;
+    opacity: 0.77;
+    line-height: 30px;
+    width: 90%;
+}
+
+.input-group {
+    margin: 0 auto;
+    max-width: 750px;
+}
+
+.form-control {
+    width: 609px;
+    font-size: 19px;
+    height: 80px;
+    line-height: 80px;
+    padding: 0 38px;
+    font-weight: 400;
+    display: block;
+    float: left;
+}
+.input-bottom {
+padding: 20px 60px;
+background-color: #13C7FF;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    color: #ffffff;
+    display: block;
+    float: left;
+}
+
+.input-bottom:hover {
+    background-color: #6a737b;
+}
+
+.section-newsletter .underinput{
+    color: #c0cad0;
+    text-align: center;
+    font-size: 14px;
+}
+
+.section-newsletter .underinput img {
+    padding-right: 5px;
+}
+
+.section-getintouch {
+    background-size: cover;
+    background: url(../img/londons-kerning.jpg) no-repeat;
+
+}
+.section-getintouch .contacts {
+    background: #fff;
+    width: 555px;
+    min-height: 406px;
+    margin-left: calc(50% - 555px/2);
+
+}
+
+.section-getintouch .contacts .text {
+    padding-top: 20px;
+    padding-left: 20px;
+
+}
+
+.section-getintouch .contacts h2 {
+    color: #374048;
+    font-size: 27px;
+    text-transform: uppercase;
+
+}
+
+.section-getintouch .list {
+    list-style: none;
+    margin: 0;
+    padding-bottom: 40px;
+    font-size: 16px;
+    color: #a5aeb3;
+    line-height: 30px;
+
+}
+
+.section-getintouch .item {
+}
+
+.section-getintouch .text {
+    margin: 20px 30px;
+}
+
+.section-getintouch .contact-box {
+    background: #13C7FF;
+    font-size: 19px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 0;
+    color: #FFF;
+    padding: 20px 164px;
+}
+.section-getintouch .contact-box:hover {
+    background-color: #6a737b;
+}
+
+
+.section-getintouch .icon {
+    display: inline-block;
+    position: absolute;
+
+}
+.section-getintouch .icon-description {
+    display: inline-block;
+    padding-left: 40px;
+
 }
 
 /*.hiw-steps > .hiw-step:not(:last-child)::after{
